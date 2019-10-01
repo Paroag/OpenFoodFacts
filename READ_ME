@@ -1,0 +1,13 @@
+This repo provides basic code used to train a DL model on Google cloud ai platform to classify food brands. I used InceptionV3 Keras implementation and achieved an accuracy of ~90%.
+
+Find :
+	- data_preparation.py : The processing on images before training the model
+		** Image rescaling (200*200 pixels)
+		** Data augmentation (configurable rotation)
+		** Split between training and validation
+	- cmd : the google cloud SDK command to launch the job on GC.
+	- pickle/ : the directory containing the prepared data (see data_preparation.py)
+	- setup.py, trainer/ : Standard configuration for ai-platform (refer to google cloud documentation)
+
+Not provided :
+	- Training data (please contact me at oscar.barbier-darnal@capfi.fr if interested)
