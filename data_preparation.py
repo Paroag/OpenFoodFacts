@@ -9,7 +9,7 @@ from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.preprocessing.image import ImageDataGenerator    
 
-def data_prep(data_dir = "../Data/Scrap_Marques/", target_dir = "./pickle/", duplication_factor = 1, max_rotation_range = 0):
+def data_prep(data_dir = "../Data/Scrap_Marques/", target_dir = "./pickle/", duplication_factor = 3, max_rotation_range = 30):
     
     marques = ["Barilla", "Bjorg", "Gerble", "Panzani"]
     
