@@ -78,4 +78,4 @@ def data_prep(data_dir = "../Data/Scrap_Marques/", target_dir = "./pickle/", dup
 
 if __name__ == "__main__" :
     
-    data_prep(duplication_factor = 3, max_rotation_range = 30)
+    data_prep(duplication_factor = 3, max_rotation_range = 45)

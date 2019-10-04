@@ -1,7 +1,7 @@
 from setuptools import find_packages
 from setuptools import setup
 
-REQUIRED_PACKAGES = ['Keras>=2.2.4', 'tensorflow>=1.5', 'numpy>=1.14.5']
+REQUIRED_PACKAGES = ['Keras==2.2.4', 'tensorflow==1.14', 'numpy==1.16.5']
 
 setup(
     name='trainer',

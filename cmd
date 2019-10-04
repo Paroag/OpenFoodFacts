@@ -1,1 +1,1 @@
-gcloud ai-platform jobs submit training v6 --staging-bucket gs://keras-image-dataforgood --module-name trainer.OpenFoodFact_inceptionv3 --package-path ./trainer --region europe-west1 --config trainer/config.yaml -- --job-dir gs://keras-image-dataforgood/logs/ --stream-logs
+gcloud ai-platform jobs submit training v6 --staging-bucket gs://keras-image-dataforgood --module-name trainer.OpenFoodFact_inceptionv3 --package-path ./trainer --region europe-west1 --config trainer/config.yaml -- --job-dir gs://keras-image-dataforgood/logs/

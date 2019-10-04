@@ -7,8 +7,8 @@
 import argparse
 import pickle
 import numpy as np
-import io
 
+import tensorflow as tf
 from tensorflow.python.lib.io import file_io
 
 from keras.applications.inception_v3 import InceptionV3
@@ -89,6 +89,21 @@ def train(job_dir) :
             output_f.write(input_f.read())
     
 if __name__ == "__main__" :  
+    
+    ###
+    """
+    print("--------------------------------------")
+    from tensorflow.python.client import device_lib
+    print(device_lib.list_local_devices())
+    
+    from keras import backend as K
+    K.tensorflow_backend._get_available_gpus()
+    
+    sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+    print("--------------------------------------")
+
+   """
+    ###
 
     parser = argparse.ArgumentParser()
     
